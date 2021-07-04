@@ -1,20 +1,32 @@
 const Max = require("max-api");
 //Max.post('test123');
+m="max";
+mi="midi";
+po="portenable";
+pa="portabbrev";
+pos="portoffset";
+inn="innum";
+out="outnum";
+
+n1=1;
+n2=0;
 
 Max.addHandler('input', (dir) => {
     Max.post(`Received ${dir}`);
     if (dir === '2600') {
-        //Max.post('max midi portoffset outnum 2600 0');
-        //let mys=";
-        let als="max midi portenable 2600 3 1";
-        let yes="max midi portabbrev 2600 3 16";
-        let yess="max midi portabbrev 2600 3 16";
-        let mys="max midi portoffset outnum 2600 3 16";
-        //Max.outlet(`${mys}`);
-        Max.outlet(als);
-        //Max.outlet(yes);
-        //Max.outlet(yess);
-        //Max.outlet(mys);
+        d=dir.toString();
+        s1=[m,mi,po,d,n1,n2];
+        s2=[m,mi,po,d,n1,n1];
+        s3=[m,mi,pa,inn,d,3];
+        s4=[m,mi,pa,out,d,3];
+        s5=[m,mi,pos,inn,d,16];
+        s6=[m,mi,pos,out,d,16];
+        Max.outlet(s1);
+        Max.outlet(s2);
+        Max.outlet(s3);
+        Max.outlet(s4);
+        Max.outlet(s5);
+        Max.outlet(s6);
         
     } else if (dir === 'X-USB') {
         Max.post('X-USB');
