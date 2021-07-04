@@ -2,34 +2,32 @@ const Max = require("max-api");
 //Max.post('test123');
 m="max";
 mi="midi";
-po="portenable";
+pe="portenable";
 pa="portabbrev";
-pos="portoffset";
+po="portoffset";
 inn="innum";
 out="outnum";
 
-n1=1;
-n2=0;
+
+//TODO make function
 
 Max.addHandler('input', (dir) => {
     Max.post(`Received ${dir}`);
     if (dir === '2600') {
-        d=dir.toString();
-        s1=[m,mi,po,d,n1,n2];
-        s2=[m,mi,po,d,n1,n1];
-        s3=[m,mi,pa,inn,d,3];
-        s4=[m,mi,pa,out,d,3];
-        s5=[m,mi,pos,inn,d,16];
-        s6=[m,mi,pos,out,d,16];
-        Max.outlet(s1);
-        Max.outlet(s2);
-        Max.outlet(s3);
-        Max.outlet(s4);
-        Max.outlet(s5);
-        Max.outlet(s6);
+        arp=dir.toString();
+        s1=[m,mi,pe,arp,1,0];
+        s2=[m,mi,pe,arp,1,1];
+        s3=[m,mi,pa,inn,arp,2];
+        s4=[m,mi,pa,out,arp,2];
+        s5=[m,mi,po,inn,arp,16];
+        s6=[m,mi,po,out,arp,16];
+        com=[s1,s2,s3,s4,s5,s6];
+        for (const x of (com)) { 
+            Max.outlet(x);
+        };
         
-    } else if (dir === 'X-USB') {
-        Max.post('X-USB');
+    } else if (dir === 'MODEL D') {
+        Max.post(dir);
     } else if (dir === 'from Max 2') {
             Max.post('asefasefasdf');
     } else if (dir === 'AU DLS Synth 1') {

@@ -348,7 +348,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-15",
-					"items" : [ "AU DLS Synth 1", ",", "X-USB", ",", "E-MU XMidi1X1 Midi Out   ", ",", "from Max 1", ",", "from Max 2", ",", "2600" ],
+					"items" : [ "AU DLS Synth 1", ",", "X-USB", ",", "E-MU XMidi1X1 Midi Out   ", ",", "from Max 1", ",", "from Max 2", ",", "2600", ",", "MODEL D" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -753,6 +753,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-2", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"order" : 2,
+					"source" : [ "obj-25", 0 ]
 				}
 
 			}
