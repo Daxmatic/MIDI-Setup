@@ -20,13 +20,13 @@ const setMidi = (d,mc,os) => {
     com=[s1,s2,s3,s4,s5,s6];
     for (const x of (com)) {
         Max.outlet(x);
-        console.log(x);
+        //console.log(x);
     };
 
 };
 
 Max.addHandler('input', (dir) => {
-    Max.outlet(["\; max clearmaxwindow"]);
+    //Max.outlet(["\; max clearmaxwindow"]);
     if (dir === '2600') {
         mc = 2;
         os = 16;
@@ -62,18 +62,28 @@ Max.addHandler('input', (dir) => {
         os = 112;
         d=dir;
         setMidi(d,mc,os);
-    }/*  else if (dir) {
-        mc = 0;
-        os = 304;
+    } else if (dir === "to Max 1") {
+        mc = 9;
+        os = 128;
         d=dir;
         setMidi(d,mc,os);
-    }   
-    else  { 
-        mc =0;
-        os = 304;
-        d = dir;
+    } else if (dir === "from Max 1") {
+        mc = 10;
+        os = 128;
+        d=dir;
         setMidi(d,mc,os);
-      }*/
+    } else if (dir === "to Max 2") {
+        mc = 11;
+        os = 144;
+        d=dir;
+        setMidi(d,mc,os);
+    } else if (dir === "from Max 2") {
+        mc = 12;
+        os = 144;
+        d=dir;
+        setMidi(d,mc,os);
+    }
+
 
     
 });

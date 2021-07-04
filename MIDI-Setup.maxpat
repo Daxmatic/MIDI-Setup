@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1577.0, 924.0 ],
+		"rect" : [ 34.0, 79.0, 753.0, 924.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 11.0,
@@ -40,67 +40,25 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-22",
-					"linecount" : 2,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 844.0, 785.0, 259.0, 36.0 ],
-					"text" : "max midi portoffset outnum \"Ableton Push 2 User Port\" 112"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-14",
-					"maxclass" : "newobj",
+					"id" : "obj-44",
+					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 767.0, 674.0, 58.0, 22.0 ],
-					"text" : "tosymbol"
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 189.743780508506802, 107.493902439024396, 24.0, 24.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-13",
+					"id" : "obj-42",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 722.5, 294.0, 58.0, 22.0 ],
-					"text" : "tosymbol"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-9",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 690.0, 238.629568476366444, 38.0, 22.0 ],
-					"text" : "2600"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-32",
-					"linecount" : 3,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 826.662337662337677, 409.0, 178.0, 50.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 5,
-					"presentation_rect" : [ 826.662337662337677, 411.839424635155297, 164.0, 77.0 ],
-					"style" : "dh.Green",
-					"text" : ";\rmax midi portenable 2600 1 0,;\rmax midi portenable 2600 1 1"
+					"numoutlets" : 2,
+					"outlettype" : [ "controllers", "bang" ],
+					"patching_rect" : [ 189.743780508506802, 139.493902439024396, 84.0, 22.0 ],
+					"text" : "t controllers b"
 				}
 
 			}
@@ -112,7 +70,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1030.0, 171.5, 183.0, 36.0 ],
+					"patching_rect" : [ 390.0, 141.5, 183.0, 36.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 756.0, 243.117648727753476, 190.0, 36.0 ],
@@ -129,7 +87,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1054.89306189960439, 222.5, 192.0, 36.0 ],
+					"patching_rect" : [ 414.89306189960439, 192.5, 192.0, 36.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 801.0, 272.979399879827156, 199.0, 36.0 ],
@@ -146,7 +104,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 988.0, 82.5, 187.0, 36.0 ],
+					"patching_rect" : [ 348.0, 52.5, 187.0, 36.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 660.0, 176.0, 194.0, 36.0 ],
@@ -163,7 +121,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1008.39306189960439, 125.5, 178.0, 36.0 ],
+					"patching_rect" : [ 368.39306189960439, 95.5, 178.0, 36.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 696.0, 213.255897575679796, 185.0, 36.0 ],
@@ -180,7 +138,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1085.39306189960439, 268.5, 163.0, 50.0 ],
+					"patching_rect" : [ 445.39306189960439, 238.5, 163.0, 50.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
 					"presentation_rect" : [ 918.083352357149124, 702.105857212277328, 163.0, 50.0 ],
@@ -191,97 +149,12 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-128",
-					"linecount" : 2,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 756.303896103896136, 182.419712317577648, 190.0, 36.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 745.833337962627411, 826.223505940030805, 195.0, 36.0 ],
-					"style" : "dh.Green",
-					"text" : ";\rmax midi portabbrev innum $1 $2"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-130",
-					"linecount" : 3,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 935.955844155844034, 670.000000000000114, 163.0, 50.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 3,
-					"presentation_rect" : [ 865.833337962627411, 885.947008244178278, 163.0, 50.0 ],
-					"style" : "dh.Green",
-					"text" : ";\rmax midi portenable $1 1 0,;\rmax midi portenable $1 1 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-131",
-					"linecount" : 2,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 779.955844155844147, 231.629568476366444, 199.0, 36.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 790.833337962627411, 856.085257092104484, 204.0, 36.0 ],
-					"style" : "dh.Green",
-					"text" : ";\rmax midi portabbrev outnum $1 $2"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-31",
-					"linecount" : 2,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 709.0, 84.0, 195.0, 36.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 610.833337962627411, 766.500003635883331, 199.0, 36.0 ],
-					"style" : "dh.Green",
-					"text" : ";\rmax midi portoffset outnum $1 $3"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-132",
-					"linecount" : 2,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 733.25454545454545, 133.209856158788853, 186.0, 36.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 685.833337962627411, 796.361754787957125, 190.0, 36.0 ],
-					"style" : "dh.Green",
-					"text" : ";\rmax midi portoffset innum $1 $3"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-25",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 653.0, 723.012195121951208, 59.0, 22.0 ],
+					"patching_rect" : [ 189.743780508506802, 316.012195121951208, 59.0, 22.0 ],
 					"text" : "prepend \\;"
 				}
 
@@ -294,20 +167,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 586.5, 826.0, 182.0, 50.0 ],
+					"patching_rect" : [ 189.743780508506802, 356.0, 182.0, 50.0 ],
 					"text" : ";\rmax midi portoffset outnum \"Ableton Push 2 User Port\" 112"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-21",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 796.955844155844147, 718.759146341463406, 71.0, 22.0 ],
-					"text" : "fromsymbol"
 				}
 
 			}
@@ -318,7 +179,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 649.0, 565.253048780487802, 82.0, 22.0 ],
+					"patching_rect" : [ 189.743780508506802, 223.746951219512198, 82.0, 22.0 ],
 					"text" : "prepend input"
 				}
 
@@ -330,7 +191,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 649.0, 547.0, 79.0, 22.0 ],
+					"patching_rect" : [ 189.743780508506802, 205.493902439024396, 79.0, 22.0 ],
 					"text" : "route append"
 				}
 
@@ -341,7 +202,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 347.0, 243.0, 76.0, 22.0 ],
+					"patching_rect" : [ 189.743780508506802, 435.0, 76.0, 22.0 ],
 					"text" : "print DEBUG:"
 				}
 
@@ -349,37 +210,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-15",
-					"items" : [ "AU DLS Synth 1", ",", "X-USB", ",", "E-MU XMidi1X1 Midi Out   ", ",", "from Max 1", ",", "from Max 2", ",", "2600", ",", "MODEL D", ",", "KOMPLETE KONTROL S49 MK2 Port 1", ",", "KOMPLETE KONTROL S49 MK2 Port 2", ",", "Komplete Kontrol DAW - 1", ",", "RD-8", ",", "Ableton Push 2 Live Port", ",", "Ableton Push 2 User Port" ],
+					"items" : [ "X-USB", ",", "E-MU XMidi1X1  Midi In   ", ",", "to Max 1", ",", "to Max 2", ",", "2600", ",", "MODEL D", ",", "KOMPLETE KONTROL S49 MK2 Port 1", ",", "KOMPLETE KONTROL S49 MK2 Port 2", ",", "Komplete Kontrol DAW - 1", ",", "RD-8", ",", "Ableton Push 2 Live Port", ",", "Ableton Push 2 User Port" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 819.0, 560.0, 100.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-10",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 430.0, 311.0, 257.0, 22.0 ],
-					"text" : "set 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-8",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 649.0, 479.0, 29.5, 22.0 ],
-					"text" : "1"
+					"patching_rect" : [ 361.743780508506802, 344.0, 100.0, 22.0 ]
 				}
 
 			}
@@ -390,7 +227,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 649.0, 514.0, 50.0, 22.0 ],
+					"patching_rect" : [ 189.743780508506802, 172.493902439024396, 50.0, 22.0 ],
 					"text" : "midiinfo"
 				}
 
@@ -410,7 +247,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 159.0, 505.0, 400.0, 375.0 ],
+					"patching_rect" : [ 50.743780508506802, 510.5, 400.0, 375.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -422,7 +259,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 537.5, 523.0, 71.0, 22.0 ],
+					"patching_rect" : [ 80.243780508506802, 307.0, 71.0, 22.0 ],
 					"text" : "fromsymbol"
 				}
 
@@ -437,7 +274,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 508.0, 351.0, 121.0, 166.0 ],
+					"patching_rect" : [ 50.743780508506802, 135.0, 121.0, 166.0 ],
 					"prototypename" : "NodeScriptCommands",
 					"tabcolor" : [ 0.298039215686275, 0.396078431372549, 0.686274509803922, 1.0 ],
 					"tabs" : [ "script start", "script stop", "script status", "script processStatus", "script running", "script npm init", "reveal" ]
@@ -451,7 +288,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 649.0, 620.506097560975604, 105.0, 22.0 ],
+					"patching_rect" : [ 189.743780508506802, 279.0, 105.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
@@ -708,7 +545,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-22", 1 ],
+					"destination" : [ "obj-16", 0 ],
 					"order" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -759,14 +596,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
-					"order" : 2,
-					"source" : [ "obj-25", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-23", 1 ],
 					"order" : 0,
 					"source" : [ "obj-25", 0 ]
@@ -790,6 +619,27 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-42", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-42", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-42", 0 ],
+					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"order" : 0,
 					"source" : [ "obj-6", 0 ]
@@ -801,20 +651,6 @@
 					"destination" : [ "obj-17", 0 ],
 					"order" : 1,
 					"source" : [ "obj-6", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"source" : [ "obj-8", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
-					"source" : [ "obj-9", 0 ]
 				}
 
 			}
