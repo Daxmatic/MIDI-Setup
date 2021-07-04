@@ -62,12 +62,18 @@ Max.addHandler('input', (dir) => {
         os = 112;
         d=dir;
         setMidi(d,mc,os);
-    } else if (dir === '...') { 
-        mc = mc;
-        os = 112+16;
+    }/*  else if (dir) {
+        mc = 0;
+        os = 304;
+        d=dir;
+        setMidi(d,mc,os);
+    }   
+    else  { 
+        mc =0;
+        os = 304;
         d = dir;
         setMidi(d,mc,os);
-      }
+      }*/
 
     
 });

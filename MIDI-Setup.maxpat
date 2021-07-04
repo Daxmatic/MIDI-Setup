@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 994.0, 79.0, 696.0, 924.0 ],
+		"rect" : [ 34.0, 79.0, 1577.0, 924.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 11.0,
@@ -41,12 +41,13 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-22",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 844.0, 785.0, 259.0, 22.0 ],
-					"text" : "max midi portoffset outnum \"MODEL D\" 0"
+					"patching_rect" : [ 844.0, 785.0, 259.0, 36.0 ],
+					"text" : "max midi portoffset outnum \"Ableton Push 2 User Port\" 112"
 				}
 
 			}
@@ -294,7 +295,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 586.5, 826.0, 182.0, 50.0 ],
-					"text" : ";\rmax midi portoffset outnum \"MODEL D\" 0"
+					"text" : ";\rmax midi portoffset outnum \"Ableton Push 2 User Port\" 112"
 				}
 
 			}
@@ -348,7 +349,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-15",
-					"items" : [ "AU DLS Synth 1", ",", "X-USB", ",", "E-MU XMidi1X1 Midi Out   ", ",", "from Max 1", ",", "from Max 2", ",", "2600", ",", "MODEL D" ],
+					"items" : [ "AU DLS Synth 1", ",", "X-USB", ",", "E-MU XMidi1X1 Midi Out   ", ",", "from Max 1", ",", "from Max 2", ",", "2600", ",", "MODEL D", ",", "KOMPLETE KONTROL S49 MK2 Port 1", ",", "KOMPLETE KONTROL S49 MK2 Port 2", ",", "Komplete Kontrol DAW - 1", ",", "RD-8", ",", "Ableton Push 2 Live Port", ",", "Ableton Push 2 User Port" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
