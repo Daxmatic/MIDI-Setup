@@ -36,22 +36,38 @@ Max.addHandler('input', (dir) => {
         mc = 3;
         os = 32;
         d=dir;
-        setMidi(d,mc,os);
-    } else if (dir === 'from Max 2') {
+        setMidi(d,mc,os);    
+    } else if (dir === 'RD-8') {
         mc = 4;
         os = 48;
         d=dir;
-        setMidi(d,mc, os);            
-    } else if (dir === 'AU DLS Synth 1') {
+        setMidi(d,mc,os);
+    } else if (dir === 'KOMPLETE KONTROL S49 MK2 Port 1') {
         mc = 5;
         os = 64;
         d=dir;
-        setMidi(d,mc,os);
-    } else if (dir === 'E-MU XMidi1x1 Nidi Out ') {
+        setMidi(d,mc,os);            
+    } else if (dir === 'KOMPLETE KONTROL S49 MK2 Port 2') {
         mc = 6;
         os = 80;
         d=dir;
         setMidi(d,mc,os);
-    } 
+    } else if (dir === 'Ableton Push 2 Live Port') {
+        mc = 7;
+        os = 96;
+        d=dir;
+        setMidi(d,mc,os);
+    } else if (dir === 'Ableton Push 2 User Port') {
+        mc = 8;
+        os = 112;
+        d=dir;
+        setMidi(d,mc,os);
+    } else if (dir === '...') { 
+        mc = mc;
+        os = 112+16;
+        d = dir;
+        setMidi(d,mc,os);
+      }
+
     
 });
