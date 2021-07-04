@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 996.0, 79.0, 684.0, 924.0 ],
+		"rect" : [ 994.0, 79.0, 696.0, 924.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 11.0,
@@ -46,7 +46,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 844.0, 785.0, 259.0, 22.0 ],
-					"text" : "max midi portoffset outnum \"2600\" 16"
+					"text" : "max midi portoffset outnum \"MODEL D\" 0"
 				}
 
 			}
@@ -294,7 +294,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 586.5, 826.0, 182.0, 50.0 ],
-					"text" : ";\rmax midi portoffset outnum \"2600\" 16"
+					"text" : ";\rmax midi portoffset outnum \"MODEL D\" 0"
 				}
 
 			}
@@ -409,7 +409,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 13.0, 494.0, 400.0, 375.0 ],
+					"patching_rect" : [ 159.0, 505.0, 400.0, 375.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -699,7 +699,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 13.0, 884.0, 118.0, 22.0 ],
+					"patching_rect" : [ 13.0, 879.0, 118.0, 22.0 ],
 					"text" : "DH.MIDIDeviceConfig"
 				}
 
