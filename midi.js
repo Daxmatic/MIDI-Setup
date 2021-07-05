@@ -1,3 +1,4 @@
+'use strict';
 const Max = require("max-api");
 
 const setMidi = (d,mc,os) => {
